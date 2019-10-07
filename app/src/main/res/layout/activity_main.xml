@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E4E4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#E4E4E4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numeroVencimiento"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="start|center"
+                android:paddingLeft="2dp"
+                android:tag="input"
+                android:text="N°"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tituloNombre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:gravity="start|center"
+                android:paddingLeft="5dp"
+                android:tag="input"
+                android:text="Nombre"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tituloDireccion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:gravity="start|center"
+                android:paddingRight="5dp"
+                android:tag="input"
+                android:text="Dirección"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tituloLlamar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center|end"
+                android:paddingRight="2dp"
+                android:tag="input"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold" />.
+
+        </LinearLayout>
+        <GridView
+            android:id="@+id/grid_personas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

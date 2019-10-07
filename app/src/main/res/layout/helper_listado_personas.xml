@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panelHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fila_tabla"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numeroPersona"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="start|center"
+            android:paddingLeft="2dp"
+            android:tag="input"
+            android:text="N°"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/nombrePersona"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:tag="input"
+            android:gravity="start|center"
+            android:paddingLeft="2dp"
+            android:text="Nombre"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/direccionPersona"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:gravity="start|center"
+            android:tag="input"
+            android:paddingRight="5dp"
+            android:text="Dirección"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/llamarPersona"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:tag="input"
+            android:gravity="center|end"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawableTint="@android:color/holo_green_dark"
+            android:paddingRight="2dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
